@@ -1,0 +1,59 @@
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif; }
+
+.polygon-wrap {
+  width: 500px;
+  height: 275px; }
+  .polygon-wrap div {
+    position: absolute;
+    width: 500px;
+    height: 275px;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(50% 23%, 50% 23%, 50% 95%);
+    background-color: #9600e6; }
+    .polygon-wrap div:nth-child(1) {
+      transition-delay: 0.3s;
+      transition-duration: 0.3s;
+      background-color: #8500cd; }
+    .polygon-wrap div:nth-child(2) {
+      transition-delay: 0.4s;
+      transition-duration: 0.35s;
+      background-color: #7500b3; }
+    .polygon-wrap div:nth-child(3) {
+      transition-delay: 0.5s;
+      transition-duration: 0.4s;
+      background-color: #64009a; }
+    .polygon-wrap div:nth-child(4) {
+      transition-delay: 0.6s;
+      transition-duration: 0.45s;
+      background-color: #530080; }
+    .polygon-wrap div:nth-child(5) {
+      transition-delay: 0.7s;
+      transition-duration: 0.5s;
+      background-color: #430067; }
+    .polygon-wrap div:nth-child(6) {
+      transition-delay: 0.8s;
+      transition-duration: 0.55s;
+      background-color: #32004d; }
+    .polygon-wrap div:nth-child(7) {
+      transition-delay: 0.9s;
+      transition-duration: 0.6s;
+      background-color: #220034; }
+  .polygon-wrap:hover div:nth-child(1) {
+    -webkit-clip-path: polygon(19% 42%, 26% 32%, 50% 95%); }
+  .polygon-wrap:hover div:nth-child(2) {
+    -webkit-clip-path: polygon(26% 32%, 35.2% 24%, 50% 95%); }
+  .polygon-wrap:hover div:nth-child(3) {
+    -webkit-clip-path: polygon(35% 24%, 45.5% 20%, 50% 95%); }
+  .polygon-wrap:hover div:nth-child(4) {
+    -webkit-clip-path: polygon(45% 20%, 55% 20%, 50% 95%); }
+  .polygon-wrap:hover div:nth-child(5) {
+    -webkit-clip-path: polygon(65% 24%, 54.5% 20%, 50% 95%); }
+  .polygon-wrap:hover div:nth-child(6) {
+    -webkit-clip-path: polygon(76% 32%, 65% 24%, 50% 95%); }
+  .polygon-wrap:hover div:nth-child(7) {
+    -webkit-clip-path: polygon(83% 42%, 76% 32%, 50% 95%); }
+
+/*# sourceMappingURL=styles.css.map */

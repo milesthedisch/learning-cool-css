@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(240,240,240);
+  font-family: sans-serif;
+}
+
+.polygon-wrap {
+  width: 500px; height: 275px;
+  div { 
+    position: absolute; 
+    width: 500px; height: 275px; // Completely for illustration purposes
+    top: 0; left: 0;
+    -webkit-clip-path: polygon(50% 23%, 50% 23%, 50% 95%);
+    background-color: rgb(150, 0, 230);
+    @for $i from 1 through 7 {		
+        &:nth-child(#{$i}) {
+          $tdelay: ((($i*0.1))+0.2s);
+          $tduration: ($i*0.05 + 0.25s);
+          $darkencolor: ($i*5%);
+          transition-delay:$tdelay;				        
+          transition-duration:$tduration;
+          background-color: darken(rgb(150, 0, 230), $darkencolor)
+        }
+    }	
+  }
+  &:hover {
+    div:nth-child(1) {
+    -webkit-clip-path: polygon(19% 42%, 26% 32%, 50% 95%);
+    }
+    div:nth-child(2) {
+    -webkit-clip-path: polygon(26% 32%, 35.2% 24%, 50% 95%);
+    }
+    div:nth-child(3) {
+    -webkit-clip-path: polygon(35% 24%, 45.5% 20%, 50% 95%);
+    }
+    div:nth-child(4) {
+    -webkit-clip-path: polygon(45% 20%, 55% 20%, 50% 95%);
+    }
+    div:nth-child(5) {
+    -webkit-clip-path: polygon(65% 24%, 54.5% 20%, 50% 95%);
+    }
+    div:nth-child(6) {
+    -webkit-clip-path: polygon(76% 32%, 65% 24%, 50% 95%);
+    }
+    div:nth-child(7) {
+    -webkit-clip-path: polygon(83% 42%, 76% 32%, 50% 95%);
+    }
+  }
+}
